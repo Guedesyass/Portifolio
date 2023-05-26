@@ -575,7 +575,7 @@ img {
 
 .portifolio__description{
   margin-bottom: var(--mb-0-5);
-  width: auto;
+  width: 305px;
 }
 
 .portifolio__button:hover .button__icon{
@@ -940,11 +940,10 @@ img {
     transform: translateX(-6rem);
   }
 
-
   .portifolio__content,
   .swiper-slide{
     column-gap: 4rem;
-    width: max-content;
+    width: 100%;
   }
 
   .swiper-portfolio-icon{
