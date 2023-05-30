@@ -309,9 +309,11 @@ img {
 }
 
 .home__blob-img{
-  width: 170px;
+  width: 200px;
   padding-top: 0;
+ margin: auto;
 }
+
 
 .home__data{
   grid-column: 1/3;
