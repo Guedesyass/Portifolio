@@ -84,6 +84,7 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
+
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/yasminguedes557?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYm%2F80vHNTIWg1u%2B75bXtYQ%3D%3D" target="_blank" class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
@@ -118,7 +119,7 @@
                         <h4 class="home__subtitle">Me chamo Yasmin,</h4>
                         <p class="home__desc">Sou estudante de programação e gosto de desenvolver pequenos projetos no meu tempo livre.</p>
                         <a href="#contact" class="button button--flex button__icon">
-                            Entre em Contato <i class="uil uil-message"></i>
+                            Entre em Contato    <i class="uil uil-message"></i>
                         </a>
                     </div>
                 </div>
@@ -136,7 +137,7 @@
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <div class="about__buttons">
-                <a download="" href="" class="button button--flex">Baixar CV <i
+                <a download="" href="./assets/pdf/CV.pdf" class="button button--flex">Baixar CV <i
                         class="uil uil-download-alt button__icon"></i></a>
             </div>
         </section>
@@ -206,7 +207,7 @@
                                         <span class="skills__number">60%</span>
                                     </div>
                                     <span class="skills__bar">
-                                        <span class="skills__percentage skills_js"></span>
+                                        <span class="skills__percentage skills__js"></span>
                                     </span>
                                 </div>
 
@@ -365,6 +366,7 @@
 
                                 <div>
                                     <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
 
 
                                 </div>
@@ -376,6 +378,24 @@
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt">2023-2024</i>
                                     </div>
+                                </div>
+                            </div>
+
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">
+                                        Bacharelado em Engenharia de Software
+                                    </h3>
+                                    <span class="qualification__subtitle">Universidade São Judas Tadeu</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt">2023-2027</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+
                                 </div>
                             </div>
 
@@ -413,7 +433,7 @@
 
 
                         <!--div class="portifolio__content grid swiper-slide">
-                            <img src="./assets/img/portifolio1.png" alt="" class="portifolio__img">
+                            <img src="./assets/img/portfolio2.png" alt="" class="portifolio__img mobile">
 
 
                             <div class="portifolio__data">
@@ -489,7 +509,8 @@
 
                             <div>
                                 <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">guedesyasmin20@outlook.com</span>
+                                <span class="contact__subtitle" type="email
+                                ">guedesyasmin20@outlook.com</span>
                             </div>
                         </div>
 
@@ -503,33 +524,38 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/guedesyasmin20@outlook.com" class="contact__form grid" method="post">
                         <div class="contact__content">
                             <label for="" class="contact__label">Nome:</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="Nome" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Email:</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" name="Remetente" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Assunto:</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="Assunto" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Mensagem:</label>
-                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                            <textarea name="Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button href="#" type="submit" class="button button--flex">
                                 Enviar
                                 <i class="uil uil-envelope-upload button__icon"></i>
-                            </a>
+                            </button>
                         </div>
+
+                        <input type="hidden" name="_subject" value="Nova Mensagem!">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!--input type="hidden" name="_next" value="https://guedesyass.github.io/Portifolio//thanks.html"-->
                     </form>
                 </div>
             </section>
