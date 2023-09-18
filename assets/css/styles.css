@@ -120,6 +120,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -180,6 +181,14 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+}
+
+.main-email {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*==================== NAV ====================*/
@@ -290,8 +299,7 @@ img {
 
 .home__social{
   display: grid;
-  grid-template-columns: max-content;
-  row-gap: 1rem;
+  grid-template-columns: auto;
 }
 
 .home__social-icon{
@@ -385,6 +393,7 @@ img {
 .button--flex{
   display: inline-flex;
   align-items: center;
+  border: none;
 }
 
 /*==================== ABOUT ====================*/
@@ -555,19 +564,23 @@ img {
 }
 
 /*==================== PORTFOLIO ====================*/
+
 .portifolio__container {
   overflow: initial;
 }
 
 .portifolio__content {
   padding: 0 1.5rem;
-  width: 750px;
 }
 
 .portifolio__img{
-  width: 265px;
+  width: 500px;
   border-radius: .5rem;
   justify-self: center;
+}
+
+.mobile img{
+  width: 10%;
 }
 
 .portifolio__title{
@@ -577,7 +590,7 @@ img {
 
 .portifolio__description{
   margin-bottom: var(--mb-0-5);
-  width: 305px;
+  width: 90%;
 }
 
 .portifolio__button:hover .button__icon{
@@ -590,10 +603,9 @@ img {
 }
 
 .swiper-portfolio-icon{
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: var(--first-color);
 }
-
 
 
 /*==================== CONTACT ME ====================*/
@@ -645,6 +657,25 @@ img {
   padding: .25rem .5rem .5rem 0;
 }
 
+.popUp {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--input-color);
+  width:35%;
+  height: 30%;
+  border-radius: 15px;
+  top: 40%;
+  left: 34%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popUp-button {
+  width: 35%;
+  border: none;
+}
 /*==================== FOOTER ====================*/
 .footer{
   padding-top: 2rem;
@@ -944,8 +975,14 @@ img {
 
   .portifolio__content,
   .swiper-slide{
-    column-gap: 4rem;
-    width: 100%;
+    column-gap: 5rem;
+  }
+
+  .portfolio__section {
+    max-width: 61%;
+    overflow-x: hidden;
+    margin-left: 20%;
+    padding-top: 5%;
   }
 
   .swiper-portfolio-icon{
